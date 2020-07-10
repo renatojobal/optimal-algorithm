@@ -27,8 +27,9 @@ def transpose_matrix(matrix):
     """
     result_matrix = [[None for col in range(len(matrix))] for row in range(len(matrix[0]))]
 
-    for i in range(len(matrix)-1):
-        for j in range(len(matrix[0])-1):
+
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
             result_matrix[j][i] = matrix[i][j]
 
     print_format_matrix(result_matrix)
