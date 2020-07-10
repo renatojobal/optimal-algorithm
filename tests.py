@@ -1,18 +1,11 @@
 import main
-
-
-def print_inline_list(target_list):
-    for item in target_list:
-        print(item, end=' ')
-
-
-def print_format_matrix(matrix):
-    for row in matrix:
-        print_inline_list(row)
-    print("\n")
+from utils import *
 
 
 class Test:
+    """
+    Test class
+    """
 
     def __init__(self, pages_list, frames_number, expected_matrix=None):
         """
@@ -31,6 +24,7 @@ class Test:
         print("Test finished")
         print("Result: ")
         print_format_matrix(self.result_matrix)
+        print("\n")
 
 
 def test():
