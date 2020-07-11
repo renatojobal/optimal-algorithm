@@ -19,7 +19,7 @@ Se debe enviar a ese url una petición http con los siguientes datos:
 - Body params:
 	- **"pages_list"** [*Requerido]* Es un string que representará la lista de páginas. Cáda elemento debe estar separado por un espacio " ".
 	- **"frames_number"** [*Requerido*] Es el número de marcos de página
-	- **"default_null"** [*Opcional*] Es el valor que por defecto se mostrará es los marcos vaciós.
+	- **"default_null"** [*Opcional*] Es el valor que por defecto se mostrará es los marcos vaciós. Si no se especifca se devuelve un null
 
 Ejemplo de petición:
 ```
