@@ -5,7 +5,8 @@ def print_inline_list(target_list):
     :return: None
     """
     for item in target_list:
-        print(item, end=' ')
+        chunk = "'" + str(item) + "',"
+        print(chunk, end=' ')
 
 
 def print_format_matrix(matrix):
