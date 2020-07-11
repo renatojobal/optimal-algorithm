@@ -41,11 +41,16 @@ class Frame:
         """
         return self.content == other_frame.get_content()
 
-    def get_content(self):
+    def get_content(self, default=None):
         """
         Get the attribute content
         :return: self.content
         """
+        if self.content:
+            return self.content
+        else:
+            if default is not None:
+                return default
         return self.content
 
     def copy_itself(self):
@@ -64,7 +69,7 @@ class Frame:
         :return:
         """
         if self.is_empty:
-            return "E"
+            return " "
         return str(self.content)
 
     def get_frame_details(self):
