@@ -4,7 +4,7 @@
 ### Prepara el entorno
 1. Clona el repositorio
 2. Ve a la carpeta raiz del proyecto y escribe lo siguiente para instalar Flask
-`pip install -r requirements`ç
+`pip install -r requirements`
 > Puedes crear un entorno virtual de python para esto
 3. Ejecuta el servicio con:
 `service.py`
